@@ -1,0 +1,10 @@
+<div class="row dashboard-row">
+  <div class="container-fluid">   
+    <div class="row align-items-center justify-content-center">
+      <div *ngFor="let navElement of navElements">
+          <app-card [navElement]="navElement"></app-card>
+       </div>
+    </div>
+  </div>
+
+</div>

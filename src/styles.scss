@@ -1,0 +1,111 @@
+
+
+html, body {
+  font-family: 'Times New Roman', Times, serif;
+  height: 100%;
+  overflow: hidden;
+}
+
+.full-height {
+  height: 100%;
+  min-height: 100%;
+}
+
+.full-width {
+  width: 100%;
+  min-width: 100%;
+}
+
+.no-padding {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.no-margin {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.no-outline {
+  outline: none !important;
+}
+
+.no-outline:focus {
+  outline: none !important;
+}
+
+.no-outline:active {
+  outline: none !important;
+}
+
+.h1 {
+  color: #000000;
+  font-size: 48px;
+  line-height: 52px;
+}
+
+.h2 {
+  color: #000000;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.h3 {
+  color: #000000;
+  font-size: 28px;
+  line-height: 32px;
+}
+
+.h4 {
+  color: #000000;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.h5 {
+  color: #000000;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.h6 {
+  color: #000000;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.p {
+  color: #000000;
+  font-size: 14px;
+  line-height: 20px;
+}
+$red: #E20015;
+$fuchsia: #E20015;
+$violet: #E20015;
+$dark-blue: #E20015;
+$light-blue: #E20015;
+$turquoise: #E20015;
+$light-green: #E20015;
+$dark-green: #E20015;
+$light-gray: #E20015;
+$border-grey: #E20015;
+
+/* Responsive breakpoints*/
+$col-xs: 768px;
+$col-md: 992px;
+
+/*
+Viewport 1: < col-xs
+Viewport 2: col-xs <= x < col-md
+Viewport 3: >= col-md
+*/
+
+@font-face {
+  font-family: 'Times New Roman', Times, serif;
+  src: url();
+}
+
+@font-face {
+  font-family: 'Times New Roman', Times, serif;
+  src: url();
+}

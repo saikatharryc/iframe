@@ -1,0 +1,38 @@
+<div class="container-fluid full-height no-padding">
+  <!-- nav -->
+  <nav class="navbar navbar-top fixed-top navbar-light bg-faded navbar-toggleable-md no-padding no-margin">
+    <div class="container-fluid full-height full-width no-margin no-padding">
+     
+        <!-- header 2 -->
+      <div class="row">
+           <div class="col hidden-sm-down header-tab">
+          <ul>
+            <li [class.tab-clicked]="isDashboard" (click)="onClickBack()">
+              <p *ngIf="isContentViewer">Back to Home</p>
+            </li>
+          </ul>
+        </div>
+        <div *ngIf="isContentViewer" class="col app-name-info">
+          <h4>
+            {{selectedElement.name}}
+          </h4>
+        </div>
+        </div>
+      <!-- header 3 (mobile) -->
+      <div [@fadeInMobileNav] *ngIf="isMobileNavClicked" class="header-3">
+        <div class="row no-margin no-padding mobile-nav" [class.mobile-nav-clicked]="isDashboard"
+             (click)="onClickMobileNavItem()">
+          <div class="col no-margin hidden-md-up">
+           <a *ngIf="isContentViewer">Back to Home</a>
+          </div>
+        </div>
+       </div>
+    </div>
+  </nav>
+
+  <!-- core -->
+  <div class="container-fluid core-view no-padding"
+       [ngClass]="{'core-view-footer': isDashboard, 'core-view-no-footer': isContentViewer}">
+    <router-outlet></router-outlet>
+  </div>
+</div>

@@ -1,0 +1,18 @@
+@import '../../styles.scss';
+
+.dashboard-row {
+  @media (max-width: $col-xs) {
+    margin: 0 0;
+  }
+  @media (min-width: $col-xs) and (max-width: $col-md) {
+    margin: 0 100px;
+  }
+  @media (min-width: $col-md) {
+    margin: 0 200px;
+  }
+}
+
+.user-name-row {
+  text-align: center;
+  margin: 40px 0;
+}
